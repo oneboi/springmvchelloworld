@@ -24,22 +24,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-   <form role="form" action="user" method="post">
+  <form  action="upload2"  method="post" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="name">用户名：</label>
-    <input type="text" class="form-control"   name ="name" value="king" placeholder="请输入名称">
+    <label for="name">名称</label>
+    <input type="text" class="form-control" id="name"  name="name" placeholder="请输入名称">
   </div>
-   <div class="form-group">
-    <label for="name">密码：</label>
-    <input type="password" class="form-control"   name ="age" value="19" placeholder="请输入名称">
+<div class="form-group">
+    <label for="inputfile">文件输入</label>
+    <input type="file" id="inputfile" name="upload">
+    <p class="help-block">这里是块级帮助文本的实例。</p>
   </div>
-  
-  <div class="form-group">
-    <label for="name">密码：</label>
-    <input type="text" class="form-control"   name ="address.text"  value="云南"  placeholder="请输入名称">
-  </div>
-  
+ 
   <button type="submit" class="btn btn-default">提交</button>
+  <img	src="uploads/4CA8DA3339734026A90A77408973802B_bg_zc.jpg">
 </form>
    
   </body>
